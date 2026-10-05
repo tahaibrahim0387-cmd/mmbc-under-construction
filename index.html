@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MMBC Coming Soon!</title>
+
+    <meta name="description" content="MMBC Coming Soon! Our website is currently in progress.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #f5f1ea;
+            color: #252525;
+            overflow: hidden;
+        }
+
+        .page {
+            width: 100%;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 40px;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 850px;
+            text-align: center;
+            animation: fadeIn 1.4s ease;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 6px;
+            margin-bottom: 80px;
+            text-transform: uppercase;
+        }
+
+        .small-text {
+            font-size: 13px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            color: #777;
+        }
+
+        h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(48px, 8vw, 92px);
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: -3px;
+            margin-bottom: 30px;
+        }
+
+        .description {
+            font-size: 19px;
+            line-height: 1.8;
+            color: #666;
+            font-weight: 300;
+        }
+
+        .divider {
+            width: 55px;
+            height: 1px;
+            background: #999;
+            margin: 38px auto;
+        }
+
+        .message {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #777;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: #999;
+            text-transform: uppercase;
+        }
+
+        .circle {
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border: 1px solid rgba(100, 100, 100, 0.08);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .circle.one {
+            top: -220px;
+            right: -180px;
+        }
+
+        .circle.two {
+            bottom: -260px;
+            left: -200px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .page {
+                padding: 25px;
+            }
+
+            .logo {
+                margin-bottom: 60px;
+                font-size: 20px;
+                letter-spacing: 5px;
+            }
+
+            h1 {
+                font-size: 54px;
+                letter-spacing: -2px;
+            }
+
+            .description {
+                font-size: 17px;
+            }
+
+            .small-text {
+                font-size: 11px;
+                letter-spacing: 3px;
+            }
+
+            .footer {
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="page">
+
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+
+        <div class="content">
+
+            <div class="logo">
+                MMBC
+            </div>
+
+            <div class="small-text">
+                Something New Is Coming
+            </div>
+
+            <h1>
+                MMBC Coming Soon!
+            </h1>
+
+            <p class="description">
+                Website in Progress
+            </p>
+
+            <div class="divider"></div>
+
+            <p class="message">
+                We are currently working on our new website.
+                <br>
+                Please check back soon.
+            </p>
+
+        </div>
+
+        <div class="footer">
+            © 2026 MMBC · All Rights Reserved
+        </div>
+
+    </main>
+
+</body>
+</html>
